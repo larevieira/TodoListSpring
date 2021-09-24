@@ -1,5 +1,6 @@
 package com.vieira.todolist.model;
 
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,6 +14,10 @@ public class TodoList {
 	private Integer id;
 	private String description;
 	private Boolean done;
+	
+	/*
+	 * @ElementCollection private List
+	 */
 	
 	public String getDescription() {
 		return description;
